@@ -4,13 +4,13 @@ import { useAlert } from "react-alert";
 import { logout } from "../../../actions/userActions";
 
 import "./Nav.css";
+import Search from "../Search";
 
 function NavBar(props) {
   const alert = useAlert();
   const dispatch = useDispatch();
 
   const { user, loading } = useSelector((state) => state.auth);
-
 
   const logoutHandler = () => {
     dispatch(logout());
@@ -24,6 +24,7 @@ function NavBar(props) {
 
       {user ? (
         <div class="wrap-icon-header flex-w flex-r-m">
+      
 
           <div class="menu-desktop">
             <ul class="main-menu">

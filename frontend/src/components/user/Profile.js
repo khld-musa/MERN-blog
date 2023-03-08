@@ -2,8 +2,8 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-import Loader from '../../components/layout/Loader'
-import MetaData from '../../components/layout/MetaData'
+import Loader from '../layout/Loader'
+import MetaData from '../layout/MetaData'
 
 const Profile = () => {
 
